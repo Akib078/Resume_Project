@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fbfae7;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    margin: 50px;
+    background-color: white;
+    width: 100%;
+    height: 1000px;
+    display: grid;
+    grid-template-columns: 1.15fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.left-side{
+    position: relative;
+    background-color: #251728;
+    padding: 40px;
+}
+.right-side{
+    position: relative;
+    background: white;
+    padding: 40px;
+}
+.profile-text{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.imgBx{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: auto;
+}
+.imgBx img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    object-fit: cover;
+}
+.profile-text h2{
+    color: white;
+    font-size: 1.9em;
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+}
+.profile-text h2 span{
+font-size: 0.5em;
+font-weight: 300;
+}
+
+.title{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.contact-info ul{
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.contact-info ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.contact-info .icon{
+    display: inline-block;
+    width:20px;
+    font-size:18px;
+    color: white;
+}
+.contact-info .text{
+    color: white;
+    font-weight: 300;
+}
+
+.education ul{
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+.education ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.education .edu-span{
+    color: white;
+    font-weight: 300;
+    font-weight: bold;
+}
+.education span{
+    color: white;
+    font-weight: 300;
+}
+
+.title2{
+    color: #251728;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.experience ul{
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fafafa;
+}  
+.experience ul li{
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.experience .ex-span{
+    color: #251728;
+    font-weight: 300;
+    font-weight: bold;
+}
+.experience span{
+    color: #251728;
+    font-weight: 300;
+}
+.experience span a{
+    text-decoration: none;
+    color: rgb(41, 124, 249);
+}
+
+@media(max-width:1000px) {
+    .container{
+        margin:10px;
+        grid-template-columns:repeat(1,1fr);
+    }
+}
+
+@media(max-width:1000px) {
+    .container{
+        margin:10px;
+        grid-template-columns:repeat(1,1fr);
+    }
+}
+@media(min-width:1500px) {
+    .container{
+        margin:50px;
+        grid-template-columns:repeat(1.15,2fr);
+        width:70%
+    }
+}
